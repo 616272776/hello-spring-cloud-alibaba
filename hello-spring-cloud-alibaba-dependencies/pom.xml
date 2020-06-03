@@ -10,7 +10,7 @@
     <url></url>
 
     <properties>
-        <!-- Maven Config -->
+        <!-- Project Config -->
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -27,6 +27,9 @@
         <spring-cloud-alibaba.verion>2.1.0.RELEASE</spring-cloud-alibaba.verion>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <dubbo-kryo.version>2.7.2</dubbo-kryo.version>
+
+        <!-- Common Config -->
+        <okhttp.version>4.7.2</okhttp.version>
     </properties>
 
 
@@ -85,6 +88,14 @@
                 <version>${dubbo-kryo.version}</version>
             </dependency>
             <!-- Dobbo End-->
+
+            <!-- Common Beg|in -->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <!-- Common End -->
         </dependencies>
     </dependencyManagement>
 

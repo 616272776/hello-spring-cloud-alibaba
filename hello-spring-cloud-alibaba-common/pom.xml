@@ -56,6 +56,17 @@
             <artifactId>dubbo-serialization-kryo</artifactId>
         </dependency>
         <!-- Apache Dubbo End -->
+
+        <!-- Common Beg|in -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!-- Common End -->
     </dependencies>
 
 </project>

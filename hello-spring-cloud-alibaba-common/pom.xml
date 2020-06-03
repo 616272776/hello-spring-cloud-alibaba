@@ -13,7 +13,7 @@
     <version>${dubbo-consumer.version}</version>
     <name>hello-spring-cloud-alibaba-common</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- Spring Boot Begin -->

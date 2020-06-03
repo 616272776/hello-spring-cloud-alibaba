@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: hello-spring-cloud-alibaba-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.42.7:8848
+    gateway:
+      routes:
+      - id: consumer
+        #lb负载均衡
+        uri: lb://hello-spring-cloud-alibaba-dubbo-consumer
+        predicates:
+        - Path=/api/**
+        #访问地址http://localhost:9000/api/test/123，网关后的地址http://hello-spring-cloud-alibaba-dubbo-consumer:8080/api/test/123，所以需要路径重写
+        filters:
+        - RewritePath=/api(?<segment>/?.*), $\{segment}
+#      discovery:
+#        locator:
+#          # 开启已网关作为端口+服务名+地址访问，例如：http://localhost:9000/hello-spring-cloud-alibaba-dubbo-consumer/test/123
+#          enabled: true
+#          # 关闭默认大写
+#          lower-case-service-id: true
+server:
+  port: 9000

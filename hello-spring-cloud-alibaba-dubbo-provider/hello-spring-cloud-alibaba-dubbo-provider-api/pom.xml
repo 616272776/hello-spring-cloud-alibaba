@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.demo</groupId>
+        <artifactId>hello-spring-cloud-alibaba-dependencies</artifactId>
+        <version>${revision}</version>
+        <relativePath>../../hello-spring-cloud-alibaba-dependencies/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>hello-spring-cloud-alibaba-dubbo-provider-api</artifactId>
+    <version>${dubbo-provider.version}</version>
+    <name>hello-spring-cloud-alibaba-dubbo-provider-api</name>
+    <packaging>jar</packaging>
+    <description>提供者的接口</description>
+
+    <dependencies>
+
+    </dependencies>
+</project>

@@ -21,20 +21,24 @@
         <!-- Project Begin -->
         <dependency>
             <groupId>com.demo</groupId>
-            <artifactId>hello-spring-cloud-alibaba-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.demo</groupId>
             <artifactId>hello-spring-cloud-alibaba-dubbo-provider-api</artifactId>
             <version>${dubbo-provider.version}</version>
         </dependency>
         <!-- Project End -->
 
-
         <!-- Spring Begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <!-- Spring End -->
 
@@ -61,5 +65,38 @@
         <!--<artifactId>sentinel-transport-simple-http</artifactId>-->
         <!--</dependency>-->
         <!-- Alibaba End -->
+
+        <!-- Apache Dubbo Begin -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-serialization-kryo</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-common</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Apache Dubbo End -->
     </dependencies>
 </project>

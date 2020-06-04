@@ -20,13 +20,36 @@
         <!-- Project Begin -->
         <dependency>
             <groupId>com.demo</groupId>
-            <artifactId>hello-spring-cloud-alibaba-common</artifactId>
+            <artifactId>common-dubbo</artifactId>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.demo</groupId>
             <artifactId>hello-spring-cloud-alibaba-dubbo-provider-api</artifactId>
             <version>${dubbo-provider.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>configuration-sentinel</artifactId>
+            <version>${revision}</version>
+        </dependency>
         <!-- Project End -->
+
+        <!-- Spring Begin -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Spring End -->
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
     </dependencies>
 </project>

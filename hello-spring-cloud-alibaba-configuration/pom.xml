@@ -9,15 +9,14 @@
         <relativePath>../hello-spring-cloud-alibaba-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello-spring-cloud-alibaba-common</artifactId>
-    <version>${dubbo-consumer.version}</version>
-    <name>hello-spring-cloud-alibaba-common</name>
+    <artifactId>hello-spring-cloud-alibaba-configuration</artifactId>
+    <version>${revision}</version>
+    <name>hello-spring-cloud-alibaba-configuration</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>common-dubbo</module>
-        <module>common-utils</module>
-        <module>common-dto</module>
+        <!--<module>configuration-feign</module>-->
+        <module>configuration-sentinel</module>
     </modules>
 </project>

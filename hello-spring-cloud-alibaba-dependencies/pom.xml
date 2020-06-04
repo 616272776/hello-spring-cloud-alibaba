@@ -27,6 +27,7 @@
         <spring-cloud-alibaba.verion>2.1.0.RELEASE</spring-cloud-alibaba.verion>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <dubbo-kryo.version>2.7.2</dubbo-kryo.version>
+        <baomidou-mybatis.version>3.3.1.tmp</baomidou-mybatis.version>
 
         <!-- Common Config -->
         <okhttp.version>4.7.2</okhttp.version>

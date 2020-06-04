@@ -13,10 +13,17 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.42.7:8848
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
 dubbo:
   protocol:
     serialization: kryo
   registry:
     address: nacos://${nacos.host}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
+  scan:
+    base-packages: com.demo.hello.spring.cloud.alibaba.dubbo.consumer.service
 server:
+  # 随机端口
+#  port: ${random.int[9000,9999]}
   port: 8081

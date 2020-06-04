@@ -38,10 +38,10 @@ public class  GatewayApplication {
         return new DiscoveryClientRouteDefinitionLocator(discoveryClient, properties);
     }
 
-    @Bean
-    public ServerCodecConfigurer serverCodecConfigurer() {
-        return new DefaultServerCodecConfigurer();
-    }
+//    @Bean
+//    public ServerCodecConfigurer serverCodecConfigurer() {
+//        return new DefaultServerCodecConfigurer();
+//    }
 
     @Bean
     public WebFilter corsFilter() {

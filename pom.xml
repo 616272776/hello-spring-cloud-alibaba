@@ -14,8 +14,8 @@
         <module>hello-spring-cloud-alibaba-dubbo-consumer</module>
         <module>hello-spring-cloud-alibaba-common</module>
         <module>hello-spring-cloud-alibaba-dubbo-provider</module>
-        <module>hello-spring-cloud-alibaba-openfeign</module>
         <module>hello-spring-cloud-alibaba-gateway</module>
+        <module>hello-spring-cloud-alibaba-configuration</module>
     </modules>
 
 

@@ -6,9 +6,28 @@ nacos:
   port: 8848
   username: nacos
   password: nacos
+
+
 spring:
   application:
     name: hello-spring-cloud-alibaba-dubbo-provider-service
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
 dubbo:
   registry:
     address: nacos://${nacos.host}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
@@ -18,6 +37,11 @@ dubbo:
     name: dubbo
     port: -1
     serialization: kryo
-  #均衡策略
+  # 均衡策略
   provider:
     loadbalance: roundrobin
+
+mybatis-plus:
+  configuration:
+    # 输出sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

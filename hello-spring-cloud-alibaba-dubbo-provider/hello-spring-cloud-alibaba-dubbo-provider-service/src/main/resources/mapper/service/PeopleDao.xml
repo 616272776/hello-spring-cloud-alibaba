@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo.hello.spring.cloud.alibaba.dubbo.provider.service.dao.PeopleDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.demo.hello.spring.cloud.alibaba.dubbo.provider.service.entity.PeopleEntity" id="peopleMap">
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="id" column="id"/>
+    </resultMap>
+
+
+</mapper>

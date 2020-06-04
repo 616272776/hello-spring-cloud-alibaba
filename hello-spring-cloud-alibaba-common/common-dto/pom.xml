@@ -6,18 +6,23 @@
         <groupId>com.demo</groupId>
         <artifactId>hello-spring-cloud-alibaba-dependencies</artifactId>
         <version>${revision}</version>
-        <relativePath>../hello-spring-cloud-alibaba-dependencies/pom.xml</relativePath>
+        <relativePath>../../hello-spring-cloud-alibaba-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello-spring-cloud-alibaba-common</artifactId>
-    <version>${dubbo-consumer.version}</version>
-    <name>hello-spring-cloud-alibaba-common</name>
+    <artifactId>common-dto</artifactId>
+    <version>${revision}</version>
+    <name>common-dto</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>common-dubbo</module>
-        <module>common-utils</module>
-        <module>common-dto</module>
-    </modules>
+    <dependencies>
+
+        <!-- Common Begin -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- Common End -->
+    </dependencies>
+
 </project>

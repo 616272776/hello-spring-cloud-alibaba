@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: hello-spring-cloud-alibaba-openfeign
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 192.168.42.7:8848
-server:
-  port: 9003

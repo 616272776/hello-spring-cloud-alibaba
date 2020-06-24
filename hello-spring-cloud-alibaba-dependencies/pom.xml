@@ -24,7 +24,7 @@
 
 
         <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
-        <spring-cloud-alibaba.verion>2.1.0.RELEASE</spring-cloud-alibaba.verion>
+        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <dubbo-kryo.version>2.7.2</dubbo-kryo.version>
         <baomidou-mybatis.version>3.3.1.tmp</baomidou-mybatis.version>
@@ -75,7 +75,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba.verion}</version>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
